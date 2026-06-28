@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Mohamad Younes | Portfólio</title>
+  <!-- Google Fonts: Syne (display) + Inter (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVEGAÇÃO FIXA — visível em todas as seções
+       ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / nome reduzido -->
+      <a href="#sobre" class="nav-logo" aria-label="Início">AMY</a>
+
+      <!-- Links de âncora para cada seção -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre"    class="nav-link">Sobre mim</a></li>
+        <li><a href="#formacao" class="nav-link">Formação</a></li>
+        <li><a href="#portfolio"class="nav-link">Portfólio</a></li>
+        <li><a href="#contato"  class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- Botão hambúrguer para mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — seção de abertura impactante
+       ============================================================ -->
+  <header class="hero" id="hero">
+    <!-- Grade de pontos decorativa, criada por JS -->
+    <div class="hero-dots" id="hero-dots" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Etiqueta discreta acima do nome -->
+      <span class="hero-eyebrow">Supervisor de Loja & Desenvolvedor</span>
+
+      <h1 class="hero-name">
+        <span class="name-first">Ali Mohamad</span>
+        <span class="name-last">Younes</span>
+      </h1>
+
+      <p class="hero-tagline">
+        Gestão com precisão.<br />
+        <em>Código com propósito.</em>
+      </p>
+
+      <!-- CTA principal -->
+      <a href="#contato" class="btn-primary">Entre em contato</a>
+    </div>
+
+    <!-- Indicador de scroll animado -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>role para baixo</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SEÇÃO 1 — SOBRE MIM
+       ============================================================ -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <!-- Cabeçalho da seção com número visual -->
+      <header class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">Sobre mim</h2>
+      </header>
+
+      <div class="sobre-grid">
+        <!-- Cartão de avatar + fatos rápidos -->
+        <div class="sobre-card" id="sobre-card">
+          <div class="avatar-wrap">
+            <!-- Iniciais como avatar; substitua por <img> se tiver foto -->
+            <div class="avatar-initials" aria-label="Ali Mohamad Younes">AMY</div>
+          </div>
+          <ul class="quick-facts">
+            <li><span class="fact-label">Localização</span><span class="fact-value">São Paulo, SP</span></li>
+            <li><span class="fact-label">Área</span><span class="fact-value">Varejo & TI</span></li>
+            <li><span class="fact-label">Disponibilidade</span><span class="fact-value">Aberto a propostas</span></li>
+          </ul>
+        </div>
+
+        <!-- Texto de apresentação -->
+        <div class="sobre-text">
+          <p class="lead">
+            Olá! Sou o Ali, supervisor de loja com sólida experiência em operações de varejo,
+            logística e controle de estoque — e estou expandindo minha atuação para o universo
+            da tecnologia e do desenvolvimento web.
+          </p>
+          <p>
+            No ambiente de trabalho, busco unir a eficiência dos processos com a clareza da
+            comunicação: seja coordenando equipes na loja, acompanhando indicadores logísticos
+            ou estruturando projetos de inclusão digital para a terceira idade.
+          </p>
+          <p>
+            Quando não estou atrás do balcão ou do teclado, me dedico a explorar o universo das
+            fragrâncias, estudar tendências de varejo e desenvolver projetos sociais voltados
+            à tecnologia acessível.
+          </p>
+
+          <!-- Hobbies em chips visuais -->
+          <div class="hobbies">
+            <span class="hobby-chip">☕ Café</span>
+            <span class="hobby-chip">🎵 Música</span>
+            <span class="hobby-chip">📚 Leitura</span>
+            <span class="hobby-chip">💻 Programação</span>
+            <span class="hobby-chip">🌿 Perfumes</span>
+            <span class="hobby-chip">🤝 Voluntariado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 2 — FORMAÇÃO
+       ============================================================ -->
+  <section id="formacao" class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Formação</h2>
+      </header>
+
+      <!-- Linha do tempo de educação -->
+      <div class="timeline" id="timeline">
+
+        <article class="timeline-item" data-reveal>
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time class="timeline-date">2024 – em curso</time>
+            <h3 class="timeline-title">Análise e Desenvolvimento de Sistemas</h3>
+            <p class="timeline-org">Faculdade — São Paulo, SP</p>
+            <p class="timeline-desc">
+              Fundamentos de programação web, banco de dados, engenharia de software
+              e desenvolvimento de sistemas orientados a objetos.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item" data-reveal>
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time class="timeline-date">2022</time>
+            <h3 class="timeline-title">Gestão de Varejo</h3>
+            <p class="timeline-org">Curso de Extensão</p>
+            <p class="timeline-desc">
+              Técnicas de supervisão, controle de estoque, atendimento ao cliente
+              e indicadores de desempenho em loja.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item" data-reveal>
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <time class="timeline-date">2020</time>
+            <h3 class="timeline-title">Ensino Médio Completo</h3>
+            <p class="timeline-org">Escola Estadual — São Paulo, SP</p>
+            <p class="timeline-desc">Conclusão do ensino médio com ênfase em ciências exatas.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Grade de cursos e idiomas -->
+      <div class="skills-grid">
+        <!-- Coluna de cursos complementares -->
+        <div class="skills-block">
+          <h3 class="skills-block-title">Cursos Complementares</h3>
+          <ul class="skills-list">
+            <li class="skills-list-item">
+              <span class="skills-name">HTML5 &amp; CSS3</span>
+              <span class="skills-bar-wrap" aria-label="Nível: 70%">
+                <span class="skills-bar" style="--pct:70%"></span>
+              </span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-name">JavaScript</span>
+              <span class="skills-bar-wrap" aria-label="Nível: 55%">
+                <span class="skills-bar" style="--pct:55%"></span>
+              </span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-name">Lógica de Programação</span>
+              <span class="skills-bar-wrap" aria-label="Nível: 65%">
+                <span class="skills-bar" style="--pct:65%"></span>
+              </span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-name">Pacote Office / ERP</span>
+              <span class="skills-bar-wrap" aria-label="Nível: 85%">
+                <span class="skills-bar" style="--pct:85%"></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna de idiomas -->
+        <div class="skills-block">
+          <h3 class="skills-block-title">Idiomas</h3>
+          <ul class="skills-list">
+            <li class="skills-list-item">
+              <span class="skills-name">Português</span>
+              <span class="skills-bar-wrap" aria-label="Nativo">
+                <span class="skills-bar" style="--pct:100%"></span>
+              </span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-name">Árabe</span>
+              <span class="skills-bar-wrap" aria-label="Nível: 80%">
+                <span class="skills-bar" style="--pct:80%"></span>
+              </span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-name">Inglês</span>
+              <span class="skills-bar-wrap" aria-label="Nível: 45%">
+                <span class="skills-bar" style="--pct:45%"></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 3 — PORTFÓLIO
+       ============================================================ -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Portfólio</h2>
+      </header>
+
+      <!-- Filtros de categoria -->
+      <div class="filter-bar" role="group" aria-label="Filtrar projetos">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="social">Social</button>
+        <button class="filter-btn" data-filter="gestao">Gestão</button>
+      </div>
+
+      <!-- Grade de projetos -->
+      <div class="projects-grid" id="projects-grid">
+
+        <article class="project-card" data-category="social">
+          <div class="project-img" style="--bg:#2D6A4F" aria-label="Projeto TechIdoso">
+            <span class="project-icon">👴🏽</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Social</span>
+            <h3 class="project-title">TechIdoso Voluntário</h3>
+            <p class="project-desc">
+              Programa de inclusão digital para idosos: metodologia, material didático
+              e relatórios de impacto produzidos como documentos HTML estilizados.
+            </p>
+            <a href="#" class="project-link" aria-label="Ver TechIdoso Voluntário">
+              Ver projeto →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-img" style="--bg:#1B4F72" aria-label="Portfólio pessoal">
+            <span class="project-icon">🌐</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web</span>
+            <h3 class="project-title">Portfólio Pessoal</h3>
+            <p class="project-desc">
+              Este site — desenvolvido com HTML5, CSS3 puro e JavaScript vanilla,
+              sem nenhum framework. Hospedado no GitHub Pages.
+            </p>
+            <a href="#" class="project-link" aria-label="Ver código no GitHub">
+              Código no GitHub →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="gestao">
+          <div class="project-img" style="--bg:#6C3483" aria-label="Gestão de loja">
+            <span class="project-icon">🏪</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Gestão</span>
+            <h3 class="project-title">Supervisão — Loja Z Modas</h3>
+            <p class="project-desc">
+              Implementação de rotinas de controle de estoque, recebimento de mercadorias,
+              indicadores logísticos e organização de depósito.
+            </p>
+            <a href="#" class="project-link" aria-label="Saiba mais">
+              Saiba mais →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web social">
+          <div class="project-img" style="--bg:#784212" aria-label="Kiosk de perfumes">
+            <span class="project-icon">🌸</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Negócio</span>
+            <h3 class="project-title">Kiosk — Fragrâncias & Presentes</h3>
+            <p class="project-desc">
+              Planejamento de negócio para quiosque de perfumes em galeria: curadoria de
+              produtos, estratégia de vendas e identidade visual.
+            </p>
+            <a href="#" class="project-link" aria-label="Ver detalhes">
+              Ver detalhes →
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 4 — CONTATO
+       ============================================================ -->
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Contato</h2>
+      </header>
+
+      <div class="contato-grid">
+        <!-- Informações de contato -->
+        <div class="contato-info">
+          <p class="contato-intro">
+            Quer trocar uma ideia, fazer uma proposta ou apenas dizer olá?
+            Preencha o formulário — responderei em até 48 horas.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:ali@email.com">ali@email.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <span class="contact-icon">🔗</span>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulário de contato com validação em JavaScript -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <!-- Cada campo tem: label, input/textarea, e <span> de erro -->
+
+          <div class="form-group">
+            <label for="nome" class="form-label">Nome completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="form-input"
+              placeholder="Seu nome"
+              autocomplete="name"
+            />
+            <span class="form-error" id="nome-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="seu@email.com"
+              autocomplete="email"
+            />
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              class="form-input form-textarea"
+              placeholder="Escreva sua mensagem aqui…"
+              rows="5"
+            ></textarea>
+            <span class="form-error" id="mensagem-error" role="alert"></span>
+          </div>
+
+          <!-- Botão de envio -->
+          <button type="submit" class="btn-primary btn-submit" id="btn-submit">
+            Enviar mensagem
+          </button>
+
+          <!-- Mensagem de sucesso (oculta até o envio) -->
+          <div class="form-success" id="form-success" aria-live="polite" hidden>
+            ✅ Mensagem enviada com sucesso! Em breve entrarei em contato.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        © <span id="footer-year"></span> Ali Mohamad Younes · Feito com HTML5, CSS3 &amp; JS puro
+      </p>
+      <a href="#sobre" class="footer-back" aria-label="Voltar ao topo">↑ Topo</a>
+    </div>
+  </footer>
+
+  <!-- Script principal (defer = carrega após o HTML) -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
